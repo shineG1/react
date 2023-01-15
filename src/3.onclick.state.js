@@ -11,6 +11,7 @@ function App() {
   let post = '울산 우동 맛집';
   let [글제목, b] = useState(['여자 코트 추천', '강남 우동맛집', '리액트독학']);
   let [따봉, 따봉변경] = useState(0);
+  let [제목, 제목변경] = useState('변경');
 
   // function 함수(){
   //   console.log(1);
@@ -23,7 +24,7 @@ function App() {
         <h4>ReactBlog</h4>
       </div>
       <div className='list'>
-        <h4>{글제목[0]} <span onClick={() => { 따봉변경(따봉+1)}}>💖</span> {따봉} </h4>
+        <h4>{글제목[0]} <span onClick={() => { 따봉변경(따봉+1)}}>💖</span> {따봉} <span onClick={()=>{제목변경('남자 코트 추천')}}>{제목}</span></h4>
         <p>1월 15일 발행</p>
       </div>
 
