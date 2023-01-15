@@ -6,7 +6,7 @@ import { useState } from 'react';
 function App() {
 
   let post = '울산 우동 맛집';
-  let [글제목, b] = useState('여자 코트 추천', '강남 우동맛집', '리액트독학');
+  let [글제목, b] = useState(['여자 코트 추천', '강남 우동맛집', '리액트독학']);
 
 
   return (
@@ -19,11 +19,11 @@ function App() {
         <p>1월 15일 발행</p>
       </div>
       <div className='list'>
-        <h4>{post[1]}</h4>
+        <h4>{글제목[1]}</h4>
         <p>1월 15일 발행</p>
       </div>
       <div className='list'>
-        <h4>{post[2]}</h4>
+        <h4>{글제목[2]}</h4>
         <p>1월 15일 발행</p>
       </div>
     </div>
